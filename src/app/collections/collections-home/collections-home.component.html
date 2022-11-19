@@ -1,0 +1,31 @@
+<app-divider>
+    tabel component
+</app-divider>
+<app-tabel [data]="data" [header]="header"></app-tabel>
+
+<app-divider>
+    tab component
+</app-divider>
+
+<div class="ui grid">
+    <div class="four wide column">
+      <div class="ui vertical fluid tabular menu">
+        <a class="item " routerLink="./"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+          Bio
+        </a>
+        <a class="item" routerLink="partners" routerLinkActive="active">
+            Partners
+        </a>
+        <a class="item" routerLink="companys" routerLinkActive="active">
+          Companies
+        </a>
+  
+      </div>
+    </div>
+    <div class="twelve wide stretched column">
+      <div class="ui segment">
+          <router-outlet></router-outlet>
+
+      </div>
+    </div>
+  </div>
